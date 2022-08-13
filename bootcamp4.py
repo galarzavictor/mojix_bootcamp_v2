@@ -92,3 +92,47 @@ the_time = st.time_input("The time is",datetime.time())
 st.text("Display JSON")
 st.json({'name':"Jesse",'gender':"male"})	
 
+# Display Raw Code
+st.text("Display Raw Code")
+st.code("import numpy as np")
+
+# Display Raw Code
+with st.echo():
+	# This will also show as a comment
+	import pandas as pd
+	df = pd.DataFrame()
+	
+# Progress Bar
+import time
+my_bar = st.progress(0)
+for p in range(10):
+	my_bar.progress(p + 1)
+	
+# Spinner
+with st.spinner("Waiting ..."):
+	time.sleep(5)
+st.success("Finished!")
+
+# Ballons
+st.balloons()
+
+# SIDEBARS
+st.sidebar.header("About")
+st.sidebar.text("This is Streamlit Tut")
+
+# Functions
+@st.cache
+def run_fxn():
+	return range(100)
+
+st.write(run_fxn())	
+
+# Plot
+st.pyplot()
+
+# DataFrames
+st.dataframe(df)
+
+# Tables
+st.table(df)
+
