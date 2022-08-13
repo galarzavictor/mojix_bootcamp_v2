@@ -48,7 +48,6 @@ if st.checkbox("Show/Hide"):
 	
 # Radio Buttons
 status = st.radio("What is your status",("Active","Inactive"))
-
 if status == 'Active':
 	st.success("You are Active")
 else:
@@ -79,8 +78,8 @@ if st.button("Submit"):
 # Text Area
 message = st.text_area("Enter your message","Type Here...")
 if st.button("Submit"):
-	result = message.title()
-	st.success(result)
+	resultado = message.title()
+	st.success(resultado)
 
 # Date Input
 import datetime
