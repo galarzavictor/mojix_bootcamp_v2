@@ -128,13 +128,6 @@ def run_fxn():
 st.write(run_fxn())	
 
 # Plot
-with st.echo():
-	st.pyplot()
-	fig, ax = plt.subplots()
-	ax.scatter([1, 2, 3], [1, 2, 3])
-	other plotting actions
-	st.pyplot(fig)
-
 import matplotlib.pyplot as plt
 
 def f(t):
