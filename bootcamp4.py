@@ -38,7 +38,7 @@ vid_file = open("example.mp4","rb").read()
 st.video(vid_file)
 
 # Audio
-audio file = open("miMusiquita01.mp3","rb").read()
+audio_file = open("miMusiquita01.mp3","rb").read()
 st.audio(audio_file,format='audio/mp3')
 
 # widget
