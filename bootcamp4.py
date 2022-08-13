@@ -38,8 +38,8 @@ vid_file = open("example.mp4","rb").read()
 st.video(vid_file)
 
 # Audio
-# audio file = open("examplemusic.mp3","rb").read()
-# st.audio(audio_file,format='audio/mp3')
+audio file = open("miMusiquita01.mp3","rb").read()
+st.audio(audio_file,format='audio/mp3')
 
 # widget
 # Checkbox
@@ -53,4 +53,43 @@ if status == 'Active':
 	st.success("You are Active")
 else:
 	st.warning("Inactive, Activate")
+
+# SelectBox
+occupation = st.selectbox("Cual tu ocupacion?",["Programador","Dentista","Data Scientist"])
+st.write("You selected this option ",occupation)
+
+# MultiSelect
+location = st.multiselect("Donde trabajas?",("Londres","Nueva York","Bolivia","Nepal"))	
+st.write("Tu elegiste ",len(location),"lugares")
+
+# Slider
+level = st.slider("What is your level",1,5)
+
+# Buttons
+st.button("Simple Button")
+if st.button("About"):
+	st.text("Streamlit is Cool")
 	
+# Text Input
+firstname = st.text_input("Enter your firstname","Type here...")
+if st.button("Submit"):
+	result = firstname.title()
+	st.success(result)
+
+# Text Area
+message = st.text_area("Enter your message","Type Here...")
+if st.button("Submit"):
+	result = message.title()
+	st.success(result)
+
+# Date Input
+import datetime
+today = st.date_input("Today is",datetime.datetime.now())
+
+# Time
+the_time = st.time_input("The time is",datetime.time())
+
+# Displaying JSON
+st.text("Display JSON")
+st.json({'name':"Jesse",'gender':"male"})	
+
