@@ -77,7 +77,7 @@ if st.button("Submit"):
 
 # Text Area
 message = st.text_area("Enter your message","Type Here...")
-if st.button("Submit"):
+if st.button("Enviar"):
 	resultado = message.title()
 	st.success(resultado)
 
