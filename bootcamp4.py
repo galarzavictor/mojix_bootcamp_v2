@@ -128,6 +128,7 @@ def run_fxn():
 st.write(run_fxn())	
 
 # Plot
+import numpy as np
 import matplotlib.pyplot as plt
 
 def f(t):
