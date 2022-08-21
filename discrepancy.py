@@ -44,11 +44,11 @@ if rad == "Analisis":
 
 if rad == "Proceso":
     if df_expected == []:
-        #df_expected = pd.read_csv("https://storage.googleapis.com/mojix-devops-wildfire-bucket/analytics/bootcamp_2_0/Bootcamp_DataAnalysis_Expected.csv", encoding="latin-1")
-        df_expected = pd.read_csv("..\..\Streamlit\stock_inventory\Expected.csv", encoding="latin-1") # df_ICC
+        df_expected = pd.read_csv("https://storage.googleapis.com/mojix-devops-wildfire-bucket/analytics/bootcamp_2_0/Bootcamp_DataAnalysis_Expected.csv", encoding="latin-1")
+        #df_expected = pd.read_csv("..\..\Streamlit\stock_inventory\Expected.csv", encoding="latin-1") # df_ICC
     if df_counted == []:
-        #df_counted = pd.read_csv("https://storage.googleapis.com/mojix-devops-wildfire-bucket/analytics/bootcamp_2_0/Bootcamp_DataAnalysis_Counted.csv", encoding="latin-1")
-        df_counted = pd.read_csv("..\..\Streamlit\stock_inventory\Counted.csv", encoding="latin-1") # df_SOH
+        df_counted = pd.read_csv("https://storage.googleapis.com/mojix-devops-wildfire-bucket/analytics/bootcamp_2_0/Bootcamp_DataAnalysis_Counted.csv", encoding="latin-1")
+        #df_counted = pd.read_csv("..\..\Streamlit\stock_inventory\Counted.csv", encoding="latin-1") # df_SOH
         #st.session_state["df_counted"] = df_counted
         #df_counted = st.session_state["df_counted"]
 
