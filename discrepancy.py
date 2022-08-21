@@ -10,8 +10,8 @@ rad =st.sidebar.radio("Menu",["Fuente de Datos","Analisis","Proceso","Acerca del
 st.sidebar.info(
         "Esta aplicacion fue diseñada para resolver el **ejercicio 3** de "
         "la ultima clase "
-        "[reclamos](https://github.com/galarzavictor/mojix_bootcamp_v2) o "
-        "el codigo fuente [source code](https://github.com/galarzavictor/mojix_bootcamp_v2). "
+        "[reclamos](https://galarzavictor-mojix-bootcamp-v2-discrepancy-fmi9qv.streamlitapp.com/) o "
+        "el codigo fuente [source code](https://galarzavictor-mojix-bootcamp-v2-finance01-mrasnr.streamlitapp.com/). "
     )
 if rad == "Fuente de Datos":
     st.title("Captura - Fuente de Datos")
@@ -31,8 +31,8 @@ if rad == "Analisis":
         #df_counted = pd.read_csv("..\..\Streamlit\stock_inventory\Counted.csv", encoding="latin-1") # df_SOH
         #st.session_state["df_counted"] = df_counted
         #df_counted = st.session_state["df_counted"]
-    st.markdown("<h2 style='text-align: center; color: white;'>Tabla Expected</h2>", unsafe_allow_html=True)
-    st.markdown("<h3 style='text-align: left; color: white;'>Filtro:</h3>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: blue;'>Tabla Expected</h2>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: left; color: blue;'>Filtro:</h3>", unsafe_allow_html=True)
     st.markdown("""---""")
     Level1Name = st.selectbox("Elija Retail_Product_Level1Name:",options=df_expected["Retail_Product_Level1Name"].unique(),index = 0)
     ProductColor = st.selectbox("Elija Retail_Product_Color:",options=df_expected["Retail_Product_Color"].unique(),index = 0)
@@ -142,4 +142,4 @@ hide_st_style = """
             header {visibility: hidden;}
             </style>
             """
-# st.markdown(hide_st_style, unsafe_allow_html=True)
+st.markdown(hide_st_style, unsafe_allow_html=True)
