@@ -1,6 +1,6 @@
 #from asyncio.windows_events import NULL
 import streamlit as st
-!pip install "pymongo[srv]"
+#!pip install "pymongo[srv]"
 import pymongo
 from pymongo import UpdateOne
 import pandas as pd
